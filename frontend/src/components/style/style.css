@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.active {
+  background-color: #91a7b4;
+}
+/* App.js */
+.appContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.appPhotographers {
+  background-color: white;
+  height: 300px;
+  width: 300px;
+  color: #282c34;
+}
+.appAlbums {
+  background-color: white;
+  height: 300px;
+  width: 630px;
+  color: #282c34;
+  margin-left: 10px;
+}
+.appContPhoto {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+  width: 940px;
+  min-height: 400px;
+  margin-top: 10px;
+  color: #282c34;
+}
+/* PhotographersTable.jsx */
+.photographerTable_ul {
+  padding-inline-start: 0;
+}
+.photographerTable_li {
+  list-style-type: none;
+  cursor: pointer;
+  font-size: 19px;
+}
+.photographerTable_li:hover {
+  background-color: #adc4d1;
+}
+/* AlbumTable.jsx */
+.albumTable_ul {
+  padding-inline-start: 0;
+}
+.albumTable_li {
+  list-style-type: none;
+  cursor: pointer;
+  font-size: 19px;
+}
+.albumTable_li:hover {
+  background-color: #adc4d1;
+}
+/* Photo.jsx */
+.photoContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+.inputSearch {
+  margin-top: 15px;
+  width: 200px;
+  height: 25px;
+  text-align: center;
+}
+/* Media */
+@media (max-width: 1000px) {
+  .appContainer {
+    flex-direction: column;
+  }
+  .photographerTable_li {
+    font-size: 15px;
+  }
+  .albumTable_li {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .appPhotographers {
+    height: 220px;
+    width: 330px;
+    margin-bottom: 10px;
+  }
+  .appAlbums {
+    height: 370px;
+    width: 320px;
+    margin-left: 0;
+    padding: 5px;
+  }
+  .appContPhoto {
+    width: 330px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
